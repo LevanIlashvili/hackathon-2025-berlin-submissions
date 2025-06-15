@@ -143,7 +143,7 @@ export default function EmployerWizardPage() {
       }));
 
       console.log('Sending payout data to backend:', { recipients })
-      const response = await fetch('http://localhost:3001/payout', {
+      const response = await fetch('https://blockcraft-technology-shadowpay-api.lkz1a7.easypanel.host/payout', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

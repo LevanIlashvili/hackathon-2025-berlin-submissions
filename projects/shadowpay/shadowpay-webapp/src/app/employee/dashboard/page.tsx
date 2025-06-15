@@ -202,7 +202,7 @@ export default function EmployeeDashboard() {
     const handleWithdraw = async (recipient: string, amount: string): Promise<WithdrawResponse> => {
       console.log(`Withdrawing ${amount} tokens to ${recipient} for account ${address}`);
       try {
-          const response = await fetch('http://localhost:3001/withdraw', {
+          const response = await fetch('https://blockcraft-technology-shadowpay-api.lkz1a7.easypanel.host/withdraw', {
               method: 'POST',
               headers: {
                   'Content-Type': 'application/json',
